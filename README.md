@@ -55,3 +55,7 @@ edge cases.
 ```javascript
 npm install && npm test
 ```
+
+# Example
+
+- [form-data-extended](https://github.com/bas080/form-data-extended/blob/master/lib/form-data.spec.js#L27)
