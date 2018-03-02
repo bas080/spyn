@@ -1,0 +1,23 @@
+{
+  "name": "spyn",
+  "version": "0.0.0",
+  "description": "Simple and safe spy tool for tests",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "tape": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tape ./lib/*.spec.js"
+  },
+  "keywords": [
+    "test",
+    "spy",
+    "spying"
+  ],
+  "author": "Bassim Huis",
+  "license": "MIT"
+}
