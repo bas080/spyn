@@ -20,14 +20,14 @@ spiedFn(1, 2) // => 3
 
 ## Calls
 
-> Takes a spy function and returns an array containing information by the calls
+> Takes a spy function and returns an array containing information of each call
 
 ```javascript
 const spiedFn = spy(multiply)
 
 spiedFn(1,2)
 
-calls(spiedFn) // => [{ arguments: [1,2], returns: 2 }]
+calls(spiedFn) // => [{this: global,  arguments: [1,2], returns: 2}]
 ```
 
 ## Original

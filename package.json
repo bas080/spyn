@@ -1,15 +1,15 @@
 {
   "name": "spyn",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple and safe spy tool for tests",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "tape": "^4.9.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "tape ./lib/*.spec.js"
   },
