@@ -19,6 +19,18 @@ const spiedFn = spy(sum)
 spiedFn(1, 2) // => 3
 ```
 
+There is also a optional configuration object which allows you to define what
+function call properties are stored in the calls array. By default it stores
+arguments and return values.
+
+```js
+const spiedFn = spy(sum, {arguments: false, this: true})
+
+spiedFn.call('thiz', 'a', 'b') // => 'ab'
+
+calls(spiedFn) // => [{this: 'thiz', return: 'ab'}]
+```
+
 ## Calls
 
 > Takes a spy function and returns an array containing information of each call
@@ -28,7 +40,7 @@ const spiedFn = spy(multiply)
 
 spiedFn(1,2)
 
-calls(spiedFn) // => [{this: global,  arguments: [1,2], returns: 2}]
+calls(spiedFn) // => [{arguments: [1,2], return: 2}]
 ```
 
 ## Original
