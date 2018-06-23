@@ -1,5 +1,5 @@
 # Spyn
-[![Build Status](https://travis-ci.org/bas080/spyn.svg?branch=master)](https://travis-ci.org/bas080/spyn)
+[![Build Status](https://travis-ci.org/bas080/spyn.svg?branch=master)](https://travis-ci.org/bas080/spyn) [![Greenkeeper badge](https://badges.greenkeeper.io/bas080/spyn.svg)](https://greenkeeper.io/)
 
 Safe and minimal spying tool for testing purposes.
 
