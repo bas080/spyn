@@ -1,6 +1,6 @@
 {
   "name": "spyn",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Simple and safe spy tool for tests",
   "main": "index.js",
   "repository": {
@@ -11,18 +11,12 @@
     "lib": "lib"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-cli": "^1.1.1",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "tape": "^4.13.2"
+    "standard": "^14.3.4",
+    "tape": "^4.13.3"
   },
   "scripts": {
-    "lint": "eslint ./index.js ./lib/*.js",
-    "format": "npm run lint -- --fix",
+    "lint": "standard",
+    "format": "standard --fix",
     "prepare": "npm test",
     "pretest": "npm prune",
     "test": "tape ./lib/*.spec.js"
