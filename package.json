@@ -1,6 +1,6 @@
 {
   "name": "spyn",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "description": "Simple and safe spy tool for tests",
   "main": "index.js",
   "repository": {
@@ -23,5 +23,8 @@
     "spying"
   ],
   "author": "Bassim Huis",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^5.3.1"
+  }
 }
